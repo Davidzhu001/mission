@@ -26,7 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem "sprockets", "~> 2.11.0"
 
-gem 'slim-rails'
+gem "slim-rails"
 gem "html2slim"
 gem 'time_ago_in_words'
 gem 'devise'

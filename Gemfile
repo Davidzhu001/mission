@@ -26,13 +26,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem "sprockets", "~> 2.11.0"
 
-gem "slim-rails"
-gem "html2slim"
 gem 'time_ago_in_words'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'devise-bootstrap-views'
 gem 'pg', group: :production
+gem 'gravtastic'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

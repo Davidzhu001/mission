@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use SCSS for stylesheets
 gem "sass-rails", "4.0.2"
 gem 'compass-rails'
@@ -30,14 +29,18 @@ gem 'time_ago_in_words'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'devise-bootstrap-views'
-gem 'pg', group: :production
+gem 'sqlite3', :group => [:development, :test]
+group :production do
+  gem 'thin'
+  gem 'pg'
+end
 gem 'gravtastic'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 gem "font-awesome-rails"
 
 # Use Capistrano for deployment

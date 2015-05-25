@@ -4,7 +4,7 @@
   $(document).ready(function() {
     var cls, css_path, lls, sw;
     css_path = "assets/stylesheets/";
-    sw = $("#whatever");
+    sw = $(".style-switcher");
     sw.find(".fa-icon-user").click(function() {
       return sw.toggleClass("open");
     });

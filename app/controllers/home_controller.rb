@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  layout 'layout2', except: [:index]
+  layout 'layout2'
   def home
   end
 

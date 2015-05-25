@@ -1,67 +1,24 @@
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: { role: "form" }) do |f| %>
-
-
- <!-- Ui-40 -->
-  <div class="ui-40">
-    <div class="ui-block bg-brown">
-      <div class="ui-head">
-        <!-- Heading -->
-        <h2>Sign Up</h2>
-      </div>
-    </div>
-    <!-- Ui-block -->
-    <div class="ui-block bg-white">
-      <!-- Icon -->
-      <div class="ui-icon">
-        <i class="fa fa-envelope brown"></i>
-      </div>
-      <!-- Input box -->
-      <div class="ui-input">
-        <%= f.email_field :email, autofocus: true, class: "form-control",:placeholder => "Email" %>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-    <div class="ui-block bg-white">
-      <div class="ui-icon">
-        <i class="fa fa-user brown"></i>
-      </div>
-      <div class="ui-input">
-       <%= f.text_field :username, autofocus: true, class: "form-control", :placeholder => "Username"  %>
-      </div>
-    </div>
-    <div class="ui-block bg-white">
-      <!-- Icon -->
-      <div class="ui-icon">
-        <i class="fa fa-lock brown"></i>
-      </div>
-      <!-- Input box -->
-      <div class="ui-input">
-        <%= f.password_field :password, class: "form-control", :placeholder => "password"  %>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-    <div class="ui-block bg-white">
-      <div class="ui-icon">
-        <i class="fa fa-lock brown"></i>
-      </div>
-      <div class="ui-input">
-       <%= f.password_field :password_confirmation, class: "form-control", :placeholder => "password_confirmation" %>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-      <!-- Footer -->
-        <div class="ui-foot bg-brown">
-          <!-- Buttons -->
-          <%= f.submit t('.sign_up', :default => "Sign up"), class: "ui-button" %>
-          <% end %>
-        </div>
-    </div>
-      <div class="ui-block bg-white">
-        <div class="ui-icon">
-          <i class="fa fa-flag fa-3x red"></i>
-        </div>
-        <div class="ui-input">
-          <h4><%= render "devise/shared/links" %></h4>
-        </div>
-      </div>
+<%= bootstrap_devise_error_messages! %>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4><%= t('.sign_up', :default => "Sign up") %></h4>
   </div>
+  <div class="panel-body">
+    <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: { role: "form" }) do |f| %>
+      <div class="form-group">
+        <%= f.label :email %>
+        <%= f.email_field :email, autofocus: true, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation, class: "form-control" %>
+      </div>
+      <%= f.submit t('.sign_up', :default => "Sign up"), class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+<%= render "devise/shared/links" %>

@@ -5,7 +5,7 @@
 //$contrast: #01a9e0;
 //@import "jednotka/jednotka";
 @import "font-awesome";
-@import "new";
+
 .style-switcher {
   width: 200px;
   background-color: #434955;
@@ -87,6 +87,21 @@
       text-decoration: none; }
       .style-switcher .style-switcher-body .style-switcher-button.active {
         background-color: #8dc153; }
+      .style-switcher .style-switcher-body .style-switcher-button.orange {
+        background-color: #ff8041; }
+      .style-switcher .style-switcher-body .style-switcher-button.blue {
+        background-color: #01a9e0; }
+      .style-switcher .style-switcher-body .style-switcher-button.green {
+        background-color: #8dc153; }
+      .style-switcher .style-switcher-body .style-switcher-button.salmon {
+        background-color: #ff6d6a; }
+      .style-switcher .style-switcher-body .style-switcher-button.mint {
+        background-color: #0cbfb3; }
+      .style-switcher .style-switcher-body .style-switcher-button.red {
+        background-color: #e74c3c; }
+      .style-switcher .style-switcher-body .style-switcher-button.yellow {
+        background-color: #f8bd27; }
+
     .style-switcher .style-switcher-body .style-switcher-layouts {
       margin-top: 15px; }
       .style-switcher .style-switcher-body .style-switcher-layouts .style-switcher-button {

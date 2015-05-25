@@ -1,26 +1,32 @@
-    <div class='style-switcher' id='style-cl'>
+<% if signed_in? %>
+    <div class='style-switcher' id='whatever'>
       <div class='style-switcher-heading'>
-        Style switcher
-        <i class='fa-icon-user'></i>
+        <i class='btn btn-warning fa-icon-user'></i>
       </div>
       <div class='style-switcher-body'>
-        <div class='style-switcher-colors'>
-          <div class='style-switcher-title'>Colors</div>
-          <a class='style-switcher-color orange' data-switch-target='#colors' data-switch-to='jednotka_orange.css' href='#'></a>
-          <a class='style-switcher-color blue' data-switch-target='#colors' data-switch-to='jednotka_blue.css' href='#'></a>
-          <a class='style-switcher-color green active' data-switch-default data-switch-target='#colors' data-switch-to='jednotka_green.css' href='#'></a>
-          <a class='style-switcher-color salmon' data-switch-target='#colors' data-switch-to='jednotka_salmon.css' href='#'></a>
-          <a class='style-switcher-color mint' data-switch-target='#colors' data-switch-to='jednotka_mint.css' href='#'></a>
-          <a class='style-switcher-color red' data-switch-target='#colors' data-switch-to='jednotka_red.css' href='#'></a>
-          <a class='style-switcher-color yellow' data-switch-target='#colors' data-switch-to='jednotka_yellow.css' href='#'></a>
-        </div>
-        <div class='style-switcher-layouts'>
-          <div class='style-switcher-title'>Layout type</div>
-          <a class='style-switcher-button active' data-switch-default data-switch-target='body' data-switch-to='removeClass:boxed' href='#'>Wide</a>
-          <a class='style-switcher-button' data-switch-target='body' data-switch-to='addClass:boxed' href='#'>Boxed</a>
-        </div>
         <div class='style-switcher-reset'>
-          <a class='style-switcher-button' data-switch-target='#style-switcher' data-switch-to='reset:defaults' href='#'>Reset to defaults</a>
+          <%= link_to " Home", new_user_registration_path, :class => 'style-switcher-button green fa fa-home text-white' %>
+          </br>
+          <%= link_to " Edit Info", edit_user_registration_path, :class => 'style-switcher-button red fa fa-gear text-white' %>
+          </br> 
+          <%= link_to " My Blog", new_user_registration_path, :class => 'style-switcher-button mint fa fa-bars text-white' %>
+          </br>
+          <%= link_to " My Zone", new_user_registration_path, :class => 'style-switcher-button salmon fa fa-dashboard text-white' %>
         </div>
       </div>
     </div>
+<% else %>
+  <div class='style-switcher' id='style-cl'>
+    <div class='style-switcher-heading'>
+      <i class='btn btn-default fa-icon-user'></i>
+    </div>
+    <div class='style-switcher-body'>
+      <div class='style-switcher-reset'>
+        <%= link_to "Log In", new_user_session_path, :class => 'style-switcher-button blue' %>
+      </div>
+      <div class='style-switcher-reset'>
+       <%= link_to "Sign Up", new_user_registration_path, :class => 'style-switcher-button red' %>
+      </div>
+    </div>
+  </div>
+<% end %>

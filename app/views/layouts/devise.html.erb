@@ -10,13 +10,16 @@
 <body class='homepage'>
 	<div id='wrapper'>
 		<%= render 'layouts/header' %>
+		<div id='main' role='main'>
+			<div id='main-content'>
+			    <div class='container'>
 					<%= yield %>
-					
-		<div class='fade' id='scroll-to-top'>
-          <i class='fa-icon-chevron-up'></i>
-        </div>
+	            </div>
+   		    </div>
+		</div>
+		<%= render 'layouts/style' %>
 		<%= render 'layouts/footer' %>
 	</div>
-	<%= render 'layouts/style' %>
+
 </body>
 </html>

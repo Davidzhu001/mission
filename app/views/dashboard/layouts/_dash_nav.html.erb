@@ -4,33 +4,40 @@
  <div class="naviga-2">
      <div class="container-fluid naviga">
           <div class="row">
-              <div class="col-md-1 col-md-offset-2  col-xs-1 col-xs-offset-2  col-sm-1 col-sm-offset-2 col-lg-1 col-lg-offset-3 naviga-logo ">
+              <div class="col-xs-6 col-sm-3">
+              <div class="col-lg-offset-8 naviga-logo ">
                   <ul class="nav nav-pills">
                       <li><img class="logo" src="<%= asset_path ("logo2.png") %>"/></li>
                       <!--<li><p class="text-center"> 本扩展目前只支持Chrome浏览器，这里<a>Chrome商店下载</a></p></li>-->
                   </ul>
               </div>
-              <div class="col-md-6 col-xs-6 col-sm-6 col-lg-5 naviga-text">
+              </div>
+              <div class="col-xs-6 col-sm-5">
+               <div class="naviga-text">
                   <ul class="nav nav-pills">
                       <!--<li><img class="logo" src="images/logo.png"/></li>-->
-                      <li><p class="text-center"> 本扩展目前只支持Chrome浏览器，这里<a>Chrome商店下载</a></p></li>
+                      <li><p class="text-center"> Check the Main website of usdasdasfhjsdk<a>Chrome商店下载</a></p></li>
                   </ul>
-                  </div>
-              <div class="col-md-3  col-lg-3  naviga-btns">
-                  <ul class="nav nav-pills">
-                  <% if signed_in? %>
-                      <li role="presentation"><%= link_to "主页", root_path %></li>
-                      <li role="presentation"><%= link_to '个人中心', edit_user_registration_path %></li>
-                      <li role="presentation"><a>反馈中心</a></li>
-                  <% else %>
-                      <li role="presentation"><%= link_to "主页", root_path %></li>
-                      <li role="presentation"><%= link_to '登陆', new_user_session_path %></li>
-                      <li role="presentation"><%= link_to '注册', new_user_registration_path %></li>
-                      <li role="presentation"><a>反馈中心</a></li>
-                  <% end %>
-
-                  </ul>
+               </div>
               </div>
+              <!-- Add clearfix for only the required viewport -->
+              <div class="clearfix visible-xs"></div>
+              <div class="col-xs-6 col-sm-4"></div>
+                <div class="naviga-btns">
+                    <ul class="nav nav-pills">
+                    <% if signed_in? %>
+                        <li role="presentation"><%= link_to "Home", root_path %></li>
+                        <li role="presentation"><%= link_to '个人中心', edit_user_registration_path %></li>
+                        <li role="presentation"><a>反馈中心</a></li>
+                    <% else %>
+                        <li role="presentation"><%= link_to "Home", root_path %></li>
+                        <li role="presentation"><%= link_to 'Sign up', new_user_session_path %></li>
+                        <li role="presentation"><%= link_to 'Signup', new_user_registration_path %></li>
+                        <li role="presentation"><a>反馈中心</a></li>
+                    <% end %>
+
+                    </ul>
+                </div>
               </div>
          </div>
  </div>   

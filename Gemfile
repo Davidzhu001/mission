@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.2.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
@@ -35,7 +35,8 @@ group :production do
   gem 'pg'
 end
 gem 'gravtastic'
-
+gem 'slim-rails'
+gem 'simple_form'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

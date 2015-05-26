@@ -1,0 +1,17 @@
+<!--this must used with main_content-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mission</title>
+  <%= stylesheet_link_tag    'dash', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= render "dashboard/layouts/dash_nav" %>
+  <%= yield %>
+  <div class="footer">
+    <img src="<%= asset_path ("qq.jpg") %>" height="30" /> 关注我们：QQ群<span>330753907</span>
+  </div>
+</body>
+</html>

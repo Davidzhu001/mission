@@ -3,13 +3,7 @@ Rails.application.routes.draw do
 
   get 'dashboard/amdin'
 
-  get 'dashboard/user'
-
-  get 'dashboard/dash'
-
-  get 'dashboard/amdin'
-
-  get 'dashboard/user'
+  get 'dashboard/user_profile'
 
   root 'home#home'
   get '/about',    to: 'home#about'

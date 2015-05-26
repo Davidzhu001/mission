@@ -1,0 +1,37 @@
+<div class="navigation">
+ <div class="naviga-1">
+ </div>
+ <div class="naviga-2">
+     <div class="container-fluid naviga">
+          <div class="row">
+              <div class="col-md-1 col-md-offset-2  col-xs-1 col-xs-offset-2  col-sm-1 col-sm-offset-2 col-lg-1 col-lg-offset-3 naviga-logo ">
+                  <ul class="nav nav-pills">
+                      <li><img class="logo" src="<%= asset_path ("logo2.png") %>"/></li>
+                      <!--<li><p class="text-center"> 本扩展目前只支持Chrome浏览器，这里<a>Chrome商店下载</a></p></li>-->
+                  </ul>
+              </div>
+              <div class="col-md-6 col-xs-6 col-sm-6 col-lg-5 naviga-text">
+                  <ul class="nav nav-pills">
+                      <!--<li><img class="logo" src="images/logo.png"/></li>-->
+                      <li><p class="text-center"> 本扩展目前只支持Chrome浏览器，这里<a>Chrome商店下载</a></p></li>
+                  </ul>
+                  </div>
+              <div class="col-md-3  col-lg-3  naviga-btns">
+                  <ul class="nav nav-pills">
+                  <% if signed_in? %>
+                      <li role="presentation"><%= link_to "主页", root_path %></li>
+                      <li role="presentation"><%= link_to '个人中心', edit_user_registration_path %></li>
+                      <li role="presentation"><a>反馈中心</a></li>
+                  <% else %>
+                      <li role="presentation"><%= link_to "主页", root_path %></li>
+                      <li role="presentation"><%= link_to '登陆', new_user_session_path %></li>
+                      <li role="presentation"><%= link_to '注册', new_user_registration_path %></li>
+                      <li role="presentation"><a>反馈中心</a></li>
+                  <% end %>
+
+                  </ul>
+              </div>
+              </div>
+         </div>
+ </div>   
+</div>

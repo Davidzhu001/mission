@@ -36,7 +36,7 @@ Rails.application.configure do
   config.assets.digest = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
-  config.assets.precompile += ['application.scss', 'dash.scss']
+
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
@@ -76,4 +76,17 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+
+  # Devise mailer
+  config.action_mailer.default_url_options = { :host => 'xx.com' }
+  ActionMailer::Base.smtp_settings = {
+    :user_name => 'xxx',
+    :password => 'xxx',
+    :domain => 'xxxx',
+    :address => 'xxxx',
+    :port => xxx,
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
 end

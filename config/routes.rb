@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'dashboard/dash'
+  get '/dash', to: 'dashboard#user_profile'
 
-  get 'dashboard/amdin'
+  get '/admin', to: 'dashboard#user_profile'
 
-  get 'dashboard/user_profile'
+  get '/profile', to: 'dashboard#user_profile'
 
   root 'home#home'
   get '/about',    to: 'home#about'

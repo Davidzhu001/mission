@@ -1,0 +1,151 @@
+body{
+    font-family:微软雅黑 !important;
+}
+/*导航栏    --开始*/
+.navigation {
+    position: fixed;
+    top:0px;
+    width: 100%;
+    min-width: 1280px;
+    z-index: 100;
+}
+.naviga-1 {
+    background: #999999;
+    opacity: 0.3;
+    width: 100%;
+    height: 100px;
+    filter:alpha(opacity=30);
+    position: absolute;
+    min-width: 1280px;
+    z-index: 98;
+}
+.naviga-2 {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    min-width: 1280px;
+    z-index: 99;
+}
+.logo {
+    width:50px
+}
+.naviga {
+     margin-top:10px;
+ }
+.naviga-btns a{
+    color:#333;
+}
+.naviga-logo {
+    padding-left:3em;
+}
+.naviga-text p {
+    background: #999999;
+    border-radius:1em;
+    line-height:50px;
+    margin-left:20px;
+    padding-left:4em;
+    padding-right:4em;
+    font-size:1em;
+    color:white;
+}
+.nav li a:hover {
+    color: #fff;
+    opacity: 1;
+    background-color: #999999;
+}
+/*导航栏    --结束*/
+
+
+/*首页第一部分*/
+.index-content1 {
+    width: 100%;
+    background: url(bluebg.png) no-repeat;
+    min-width: 1280px;
+    height: 460px;
+}
+.index-content1-row {
+    margin-top:160px;
+}
+.index-content1 p {
+    color: #FF5618;
+    padding-left: 40px ;
+    padding-top:40px;
+    font-size : 20px;
+}
+.index-content1-download{
+    width:400px;
+    height: 110px;
+    margin-top: 20px;
+}
+.index-content1-download-bg {
+    position: absolute;
+    border-radius: 10px;
+    background: #999999;
+    width:400px;
+    height:100px;
+    opacity: 0.2;
+    filter:alpha(opacity=20);
+}
+.index-content1-download-text p {
+    color: #fff;
+    padding-left: 40px ;
+    padding-top:20px;
+    font-size : 20px;
+}
+.index-content1-download-text a {
+    color : red;
+    padding-left: 40px ;
+    padding-top:10px;
+    font-size : 14px;
+}
+
+/*首页第二部分*/
+.index-content2 {
+    width: 100%;
+    /*background: url(../images/content2.png) no-repeat;*/
+    min-width: 1280px;
+}
+
+/*首页第三部分*/
+.content3-first-line {
+    margin-top: 150px;
+}
+.index-content3 p{
+    color: #FF5618;
+    padding-left: 10px ;
+    font-size : 20px;
+}
+.index-content3 a{
+    color: #FF5618;
+    padding-left: 40px ;
+    font-size : 16px;
+}
+.content3-line{
+    margin-top: 120px;
+}
+.index-content3 {
+    width: 100%;
+    background: url(lbluebg.png) no-repeat;
+    min-width: 1280px;
+    height:1510px;
+}
+
+/*底边栏*/
+
+.bottom {
+    width: 100%;
+    min-width: 1280px;
+    height: 100px;
+}
+.footer
+{
+    float: right;
+    margin-right: 120px;
+    height: 60px;
+    line-height: 30px;
+    color: #000;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.footer span { color: red; }

@@ -35,8 +35,8 @@ group :production do
   gem 'pg'
 end
 gem 'gravtastic'
-gem 'slim-rails'
 gem 'simple_form'
+gem "pundit"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

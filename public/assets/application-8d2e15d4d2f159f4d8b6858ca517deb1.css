@@ -26350,7 +26350,7 @@ body.countdown-page .countdown .countdown-item .countdown-label {
 }
 
 /* line 38, /Users/Weicheng/development/rails/mission/app/assets/stylesheets/application.scss */
-.style-switcher .style-switcher-heading .fa-icon-user {
+.style-switcher .style-switcher-heading .fa-user {
   position: absolute;
   top: 0;
   right: -40px;

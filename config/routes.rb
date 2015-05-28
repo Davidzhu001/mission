@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :articles
+  resources :articles
+  resources :articles
   get '/dash', to: 'dashboard#user_profile'
 
   get '/admin', to: 'dashboard#user_profile'

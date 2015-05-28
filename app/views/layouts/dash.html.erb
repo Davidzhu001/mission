@@ -9,7 +9,22 @@
 </head>
 <body>
   <%= render "dashboard/layouts/dash_nav" %>
-  <%= yield %>
+  <%= render "layouts/style" %>
+  	<% if notice %>
+	  <p class="alert alert-success"><%= notice %></p>
+	<% end %>
+	<% if alert %>
+	  <p class="alert alert-danger"><%= alert %></p>
+	<% end %>
+  	<div class="wrap">
+  		<div id='main' role='main'>
+			<div id='main-content'>
+			    <div class='container'>
+			    	<%= yield %>
+			    </div>
+			</div>
+		</div>
+	</div><!-- /.wrap -->
   <div class="footer">
     <img src="<%= asset_path ("qq.jpg") %>" height="30" /> 关注我们：QQ群<span>330753907</span>
   </div>

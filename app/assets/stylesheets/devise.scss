@@ -1,0 +1,114 @@
+@import "devise/deviselogin";
+@import "dash/bookmark";
+@import "dash/normalize";
+@import "dash/custom";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+
+.style-switcher {
+  width: 200px;
+  background-color: #434955;
+  border-right: 1px solid #353b47;
+  border-bottom: 1px solid #353b47;
+  z-index: 9999;
+  position: fixed;
+  top: 100px;
+  left: -200px;
+  text-align: left;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: left 300ms;
+  -moz-transition: left 300ms;
+  -o-transition: left 300ms;
+  transition: left 300ms; }
+  @media (min-width: 768px) {
+  .style-switcher {
+      top: 150px; } }
+  .style-switcher.open {
+    left: 0; }
+  .style-switcher .style-switcher-heading {
+    padding: 0 15px;
+    background-color: #8dc153;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+    position: relative; }
+    .style-switcher .style-switcher-heading .fa-user {
+      position: absolute;
+      top: 0;
+      right: -40px;
+      line-height: 40px;
+      width: 40px;
+      text-align: center;
+      background-color: #8dc153;
+      cursor: pointer;
+      -moz-border-radius-topright: 5px;
+      -webkit-border-top-right-radius: 5px;
+      border-top-right-radius: 5px;
+      -moz-border-radius-bottomright: 5px;
+      -webkit-border-bottom-right-radius: 5px;
+      border-bottom-right-radius: 5px; }
+  .style-switcher .style-switcher-body {
+    padding: 15px; }
+    .style-switcher .style-switcher-body .style-switcher-title {
+      color: #eaedf2;
+      font-size: 14px;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 15px; }
+    .style-switcher .style-switcher-body .style-switcher-color {
+      width: 10%;
+      height: 30px;
+      display: inline-block; }
+      .style-switcher .style-switcher-body .style-switcher-color.active {
+        border: 2px solid white; }
+      .style-switcher .style-switcher-body .style-switcher-color.orange {
+        background-color: #ff8041; }
+      .style-switcher .style-switcher-body .style-switcher-color.blue {
+        background-color: #01a9e0; }
+      .style-switcher .style-switcher-body .style-switcher-color.green {
+        background-color: #8dc153; }
+      .style-switcher .style-switcher-body .style-switcher-color.salmon {
+        background-color: #ff6d6a; }
+      .style-switcher .style-switcher-body .style-switcher-color.mint {
+        background-color: #0cbfb3; }
+      .style-switcher .style-switcher-body .style-switcher-color.red {
+        background-color: #e74c3c; }
+      .style-switcher .style-switcher-body .style-switcher-color.yellow {
+        background-color: #f8bd27; }
+    .style-switcher .style-switcher-body .style-switcher-button {
+      display: block;
+      background-color: #676f7a;
+      text-align: center;
+      padding: 10px 5px;
+      color: white;
+      text-decoration: none; }
+      .style-switcher .style-switcher-body .style-switcher-button.active {
+        background-color: #8dc153; }
+      .style-switcher .style-switcher-body .style-switcher-button.orange {
+        background-color: #ff8041; }
+      .style-switcher .style-switcher-body .style-switcher-button.blue {
+        background-color: #01a9e0; }
+      .style-switcher .style-switcher-body .style-switcher-button.green {
+        background-color: #8dc153; }
+      .style-switcher .style-switcher-body .style-switcher-button.salmon {
+        background-color: #ff6d6a; }
+      .style-switcher .style-switcher-body .style-switcher-button.mint {
+        background-color: #0cbfb3; }
+      .style-switcher .style-switcher-body .style-switcher-button.red {
+        background-color: #e74c3c; }
+      .style-switcher .style-switcher-body .style-switcher-button.yellow {
+        background-color: #f8bd27; }
+
+    .style-switcher .style-switcher-body .style-switcher-layouts {
+      margin-top: 15px; }
+      .style-switcher .style-switcher-body .style-switcher-layouts .style-switcher-button {
+        display: inline-block;
+        width: 82px; }
+    .style-switcher .style-switcher-body .style-switcher-reset {
+      margin-top: 30px;
+      border-top: 1px solid #676f7a;
+      padding-top: 30px; }

@@ -3,13 +3,12 @@
 <html>
 <head>
   <title>Mission</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'devise', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body class='homepage'>
 	<div id='wrapper'>
-		<%= render 'layouts/header' %>
 		<div id='main' role='main'>
 			<div id='main-content'>
 			    <div class='container'>
@@ -18,7 +17,6 @@
    		    </div>
 		</div>
 		<%= render 'layouts/style' %>
-		<%= render 'layouts/footer' %>
 	</div>
 
 </body>

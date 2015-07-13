@@ -15,6 +15,7 @@
 //= require bootstrap-sprockets
 //= require jednotka/plugins/_plugins
 //= require jednotka/jednotka
+//= require sweet-alert
 
 
 (function() {

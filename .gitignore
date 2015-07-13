@@ -10,3 +10,7 @@ tmp/cache/assets/development/sprockets/4b05069af7f971ea8bd913397eb25087
 log/development.log
 
 *.log
+
+*.scssc
+
+*.scssc

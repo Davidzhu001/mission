@@ -38,6 +38,7 @@ gem 'simple_form'
 gem "pundit"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'sweet-alert'
 
 # Use Unicorn as the app server
 gem 'unicorn'

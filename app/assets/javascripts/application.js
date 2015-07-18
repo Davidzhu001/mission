@@ -16,6 +16,7 @@
 //= require jednotka/plugins/_plugins
 //= require jednotka/jednotka
 //= require sweet-alert
+//= require semantic-ui
 
 
 (function() {

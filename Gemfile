@@ -36,6 +36,8 @@ end
 gem 'gravtastic'
 gem 'simple_form'
 gem "pundit"
+gem 'will_paginate', '~> 3.0.6'
+gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'sweet-alert'
